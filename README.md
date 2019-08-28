@@ -8,7 +8,7 @@
 4. Bootstrap 4
 
 ## Nội dụng thực hiện
-
+1. Xây dựng cấu trúc trước khi bắt đầu thiết kế
 
 
 #Kết thúc nội dung

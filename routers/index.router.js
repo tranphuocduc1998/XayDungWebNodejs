@@ -8,7 +8,7 @@ const controller = require('../controllers/index.controller');
 const router = express.Router();
 
 //get router
-router.get('/', controller.getIndex);
+router.get('', controller.getIndex);
 
 
 

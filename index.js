@@ -13,8 +13,11 @@ const port = 8080;
 app.set('view engine', 'pug');
 app.set('views', './views');
 
+//thiết lập file tĩnh
+app.use(express.static('assets'));
+
 //sử dụng routers
-app.use('', routerIndex);
+app.use('/', routerIndex);
 
 
 

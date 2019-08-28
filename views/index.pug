@@ -4,6 +4,29 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel='stylesheet', href='css/style.css')
+        link(rel='stylesheet', href='bootstrap/css/bootstrap.css')
         title Trang index
     body
-        h3 đây là trang index
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='#') Navbar
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarNavAltMarkup.collapse.navbar-collapse
+                .navbar-nav
+                    a.nav-item.nav-link.active(href='#')
+                        | Home 
+                        span.sr-only (current)
+                    a.nav-item.nav-link(href='#') Features
+                    a.nav-item.nav-link(href='#') Pricing
+                    a.nav-item.nav-link.disabled(href='#', tabindex='-1', aria-disabled='true') Disabled
+
+
+        //- <!--Load Jquery trước khi sử dụng bootstrap-->
+        script(type='text/javascript', src='js/jquery-3.4.1.min.js')
+        script(type='text/javascript', src='bootstrap/js/bootstrap.js')
+        script(type='text/javascript', src='js/script.js')
+
+
+        
+
